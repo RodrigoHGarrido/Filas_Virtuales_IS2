@@ -1,0 +1,11 @@
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" [formGroup]="formdata" (ngSubmit) = "onClickSubmit()">
+      <input type="text" placeholder="Rut" formControlName="rut_cliente"/>
+      <input type="password" placeholder="Contraseña" formControlName="contrasena"/>
+      <input type="submit" [disabled] ="!formdata.valid" class="forsubmit" value="Ingresar">
+    </form>
+    <p class="message">¿Aún no estas registrado?<a routerLink="/app-registro"> Crea una cuenta</a></p>
+  </div>
+</div>
+

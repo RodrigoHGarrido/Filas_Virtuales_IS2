@@ -1,0 +1,10 @@
+<div class="login-page">
+    <div class="form">
+      <form class="login-form" [formGroup]="formdata" (ngSubmit) = "onClickSubmit()">
+        <input type="text" placeholder="Rut" formControlName="rut_admin"/>
+        <input type="password" placeholder="Contraseña" formControlName="contrasena"/>
+        <input type="submit" [disabled] ="!formdata.valid" class="forsubmit" value="Ingresar">
+      </form>
+      <p class="message">Si no posee cuenta, contactarse con el dueño de la tienda.</p>
+    </div>
+  </div>

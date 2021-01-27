@@ -1,0 +1,25 @@
+.hola{
+    position: sticky; 
+    background-color: rgba(255, 255, 255, 0.247); 
+}
+
+.myButton1 {
+	box-shadow:inset -50px -50px 0px -50px #ffffff;
+	background: color="white";
+	background-color:#ffffff;
+	border:2px solid #bbbbbb;
+	display:inline-block;
+	cursor:pointer;
+	color:#505050;
+	font-family:Trebuchet MS;
+	font-size:15px;
+	font-weight:bold;
+	padding:4px 34px;
+    text-decoration:none;
+    
+}
+.myButton1:hover {
+	background:radial-gradient(#9DE6E0, #bdf7f3, #ffffff);
+    background-color:#f6f6f6;
+    
+}

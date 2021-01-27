@@ -1,0 +1,5 @@
+<app-barra></app-barra>
+<div align= "center">
+    <p><b>Escanee el siguiente código QR y será ingresado a la fila de {{this.nombre_tienda}}</b></p><br>
+    <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+</div>

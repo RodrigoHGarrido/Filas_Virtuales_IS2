@@ -1,0 +1,12 @@
+<app-barra></app-barra>
+<div class="espacio">
+    <div *ngFor="let item of ejemplo.data.rows">
+        <br>
+        <p style="text-align: center;">Ha ingresado a la fila con el rut: {{item.rut_cliente}} </p>
+        <p style="text-align: center;">Su puesto en la fila es el número: {{item.puesto_fila}}</p>
+        <!--<p style="text-align: center;">El tiempo de espera aproximado es de: {{3*item.puesto_fila - 1}} minutos</p>-->
+
+    </div>
+    <br><br>
+    <p style="text-align: center;" *ngIf="esconderError">Error al ingresar a la fila, es posible que la tienda se encuentre cerrada</p>
+</div>

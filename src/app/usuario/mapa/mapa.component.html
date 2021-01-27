@@ -1,0 +1,16 @@
+<app-barra></app-barra>
+<div align= "center">
+    <p><b>Busque un local en el mapa para poder acceder a su fila virtual</b></p><br>
+    <agm-map [latitude] = "lat" [longitude] = "lng" [zoom]="17" (mapClick)="ClickInfo($event)">
+        <agm-marker [latitude] = "lat" [longitude] ="lng" [iconUrl]="'http://maps.google.com/mapfiles/kml/pal3/icon48.png'">
+            <agm-info-window [disableAutoPan]="true">Mi Ubicación</agm-info-window>
+        </agm-marker>
+        <agm-marker (markerClick)="ClickMarkerInfo($event)" [markerClickable]="true" [iconUrl]="location.icono" [latitude]="location.latitud" [longitude]="location.longitud" *ngFor="let location of tiendas.data.rows"  >
+            <agm-info-window [disableAutoPan]="true">
+                {{location.nombre_tienda}} <br> ID: {{location.id_tienda}}<br> Hora de apertura : {{location.hora_apertura}}<br>
+                Hora de Cierra:{{location.hora_cierre}}<br>Dirección : {{location.direccion}}<br>
+                <a href="http://localhost:4200/app-form/{{location.id_tienda}}/{{rut}}/{{lat}}/{{lng}}">ingresar a la fila</a>
+              </agm-info-window>
+        </agm-marker>
+    </agm-map>
+</div>

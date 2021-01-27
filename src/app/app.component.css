@@ -1,0 +1,12 @@
+.navbar {
+    overflow: hidden;
+    background:linear-gradient(to bottom, #f6f6f6 5%, #9DE6E0 100%);
+  }
+
+body {
+    background-image: url("fila.jpg");
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    background-position: center;
+    background-size: 100% 100%;
+  }

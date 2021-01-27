@@ -1,0 +1,32 @@
+.example-card {
+  max-width: 370px;
+  height: 600px;
+  top:10px;
+  left: 170px;
+  bottom: 20px;
+  float: left;
+}
+
+
+
+.example-card2{
+    max-width: 360px;
+    height: 600px;
+    top:10px;
+    right: 170px;
+    bottom:20px;
+    float: right;
+  }
+
+
+  
+.avatar1 {
+    background-image: url('https://seeklogo.com/images/S/salcobrand-logo-8878E57D47-seeklogo.com.png');
+    background-size: cover;
+  }
+
+.avatar2 {
+    background-image: url('https://www.logotaglines.com/wp-content/uploads/2016/12/walmart-logo-logotagline.com-.jpg');
+    background-size: cover;
+  }
+

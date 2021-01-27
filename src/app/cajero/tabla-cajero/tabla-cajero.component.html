@@ -1,0 +1,10 @@
+<app-barra-cajero></app-barra-cajero>
+<div class="espacio">
+    <div *ngFor="let item of ejemplo.data.rows">
+        <br>
+        <p style="text-align: center;">La cantidad de clientes que se encuentran en esta fila es: {{item.cantidad}} </p>
+    </div>
+    <p style="text-align: center;" *ngIf="lleno">La capacidad de esta fila es {{this.capacidad}} personas, la fila ha alcanzado su máxima capacidad</p>
+    <p style="text-align: center;" *ngIf="!lleno">La capacidad de esta fila es {{this.capacidad}} personas, la fila todavía puede aceptar más clientes</p>
+    <br>
+</div>

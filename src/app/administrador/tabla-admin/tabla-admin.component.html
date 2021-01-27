@@ -1,0 +1,28 @@
+<app-barra-admin></app-barra-admin>
+
+<div class="espacio">
+    <br>
+    <div *ngIf= "desplegarFila; else elseBlock">
+        <table align= "center">
+            <td style= "background-color: aqua;"> Nombre</td>
+            <td style= "background-color: aqua;"> Rut </td>
+            <td style= "background-color: aqua;"> Puesto</td>
+            <tr *ngFor="let item of queue.data.rows">
+                <td>{{item.nombre_cliente}}</td>
+                <td>{{item.rut_cliente}}</td>
+                <td>{{item.puesto_fila}}</td>
+            </tr>
+        </table>
+        <br>
+        <div align= "center"> Actualmente hay {{numPersonas}} persona(s) en la fila. </div>
+        <div *ngIf="mostrar; else elseBlock2" align= "center"> Actualmente hay {{contadorPersonas}} persona(s) esperando fuera del local. </div>
+
+        <app-reset-admin></app-reset-admin>
+    </div>
+    <ng-template  #elseBlock >
+        <div align= "center">Actualmente no hay personas en la fila. </div>
+    </ng-template>
+    <ng-template  #elseBlock2 >
+        <div align= "center">Actualmente no hay personas esperando afuera. </div>
+    </ng-template>
+</div>
